@@ -1,5 +1,5 @@
 import express from "express";
-import {  ChangeAddress, ChangeEmail, ChangeNumber, ChangePanNumber, register } from "../controllers/UsersControllers.js";
+import {  ChangeAddress, ChangeEmail, ChangeName, ChangeNumber, ChangePanNumber, ChangePassword, register } from "../controllers/UsersControllers.js";
 import { CheckPin, registrationCheck } from "../middlewares/authMiddleware.js";
 
 
@@ -12,6 +12,10 @@ router.post('/ChangeNumber',CheckPin, ChangeNumber);
 router.post('/ChangeEmail',CheckPin, ChangeEmail);
 router.post('/ChangeAddress',CheckPin, ChangeAddress);
 router.post('/ChangePanNumber',CheckPin, ChangePanNumber);
+router.post('/ChangeName',CheckPin, ChangeName);
+router.post('/ChangePassword',CheckPin, ChangePassword);
+
+
 
 
 
