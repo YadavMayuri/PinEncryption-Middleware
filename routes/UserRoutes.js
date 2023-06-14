@@ -20,14 +20,4 @@ router.post('/ChangePassword',CheckPin, ChangePassword);
 
 
 
-
-
-
-
-
-
-
-
-
-
 export default router;
