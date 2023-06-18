@@ -14,7 +14,6 @@ router.post('/ChangeAddress',CheckPin, ChangeAddress);
 router.post('/ChangePanNumber',CheckPin, ChangePanNumber);
 router.post('/ChangeName',CheckPin, ChangeName);
 router.post('/ChangePassword',CheckPin, ChangePassword);
-router.post('/getMediaFromYouTube',CheckPin, getMediaFromYouTube);
 
 
 

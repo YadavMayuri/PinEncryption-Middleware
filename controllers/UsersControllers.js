@@ -21,19 +21,6 @@ export const register = async (req, res) => {
 }
 
 
-export const getMediaFromYouTube = async (req, res) => {
-    try {
-       
-            const apikey = "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";
-            const response = await axios.post(`https://api.themoviedb.org/3/movie/popular?api_key=${apikey}&language=en-US&page=1`);
-            return res.send(response.data);
-            
-      
-
-    } catch (error) {
-        return res.send(error)
-    }
-}
 
 //change Number
 
